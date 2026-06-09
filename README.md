@@ -1,4 +1,4 @@
-# 📁 Trabajo Practico de la materia Programación 
+### 📁 Trabajo Practico de la materia Programación 
 
 
 
@@ -309,29 +309,9 @@ Git guarda el historial completo. Avisale al responsable del repositorio para qu
 
 
 
-\---
 
 
 
-\## 📬 Contacto
 
-
-
-¿Tenés dudas o problemas? Contactá a:
-
-
-
-\- \*\*Nombre del responsable:\*\* \[completar]
-
-\- \*\*Email:\*\* \[completar]
-
-\- O abrí un \[Issue en este repositorio](../../issues/new)
-
-
-
-\---
-
-
-
-\*Última actualización: mayo 2025\*
+\*Última actualización: Junio 2025\*
 
