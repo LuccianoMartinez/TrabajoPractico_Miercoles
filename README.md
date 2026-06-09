@@ -2,9 +2,8 @@
 
 
 
-> En este trabajo practico indagaremos en el uso de Python para el desarrollo Web con Frameworks de Django, Flask, FastAPI, Tornado. A su vez como tema secundario Hablaremos sobre IA, Etica y futuro: ¿Puede la IA reemplazar trabajos humanos? / IA y privacidad de datos / IA explicable (XAI) /
+> En este trabajo practico indagaremos en el uso de Python para el desarrollo Web con Frameworks de Django y Flask. A su vez como tema secundario Hablaremos sobre IA aplicada al desarrollo, 
 
-Regulación de la IA / ¿Qué es la IA responsable?
 
 
 

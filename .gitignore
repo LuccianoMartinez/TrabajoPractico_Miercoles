@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Entorno virtual
+entorno_virtual/
+venv/
+
+# Django
+db.sqlite3
+migrations/
+
+# Archivos de entorno
+.env
+*.log
+
+# Node / frontend
+node_modules/
+dist/
+build/
+
+# VSCode
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Carpeta embebida
+carpeta1/
