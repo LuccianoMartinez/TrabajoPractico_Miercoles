@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Eventos{% endblock %}
+
+{% block content %}
+<h2>Próximos Eventos</h2>
+
+{% if eventos %}
+    <div class="eventos-grid">
+        {% for evento in eventos %}
+        <div class="evento-card">
+            <h3>{{ evento.titulo }}</h3>
+            <p class="fecha">📅 {{ evento.fecha }}</p>
+            <p class="ubicacion">📍 {{ evento.ubicacion }}</p>
+            <p class="descripcion">{{ evento.descripcion[:100] }}...</p>
+            <div class="evento-footer">
+                <span class="disponible">{{ evento.disponible }}/{{ evento.capacidad }} disponibles</span>
+                <a href="{{ url_for('detalle_evento', evento_id=evento.id) }}" class="btn-detalles">Ver detalles</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p class="sin-eventos">No hay eventos disponibles. <a href="{{ url_for('crear_evento') }}">Crea uno</a></p>
+{% endif %}
+{% endblock %}

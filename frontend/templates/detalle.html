@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ evento.titulo }}{% endblock %}
+
+{% block content %}
+{% if evento %}
+<div class="evento-detalle">
+    <h2>{{ evento.titulo }}</h2>
+    <div class="detalle-info">
+        <p><strong>📅 Fecha:</strong> {{ evento.fecha }}</p>
+        <p><strong>📍 Ubicación:</strong> {{ evento.ubicacion }}</p>
+        <p><strong>📝 Descripción:</strong></p>
+        <p>{{ evento.descripcion }}</p>
+        <p><strong>👥 Capacidad:</strong> {{ evento.confirmados }}/{{ evento.capacidad }}</p>
+        
+        <div class="barra-progreso">
+            <div class="progreso" style="width: {{ (evento.confirmados / evento.capacidad * 100)|int }}%"></div>
+        </div>
+        
+        <div class="botones">
+            <button class="btn-confirmar" onclick="confirmarAsistencia({{ evento.id }})">
+                ✓ Confirmar Asistencia
+            </button>
+            <button class="btn-cancelar" onclick="cancelarAsistencia({{ evento.id }})">
+                ✗ Cancelar Asistencia
+            </button>
+            <a href="{{ url_for('index') }}" class="btn-volver">Volver</a>
+        </div>
+    </div>
+</div>
+{% else %}
+<p class="error">Evento no encontrado</p>
+{% endif %}
+{% endblock %}
