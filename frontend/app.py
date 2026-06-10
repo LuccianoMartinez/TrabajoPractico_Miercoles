@@ -30,10 +30,12 @@ def index():
 
 @app.route('/evento/<int:evento_id>')
 def detalle_evento(evento_id):
+    evento = None
     try:
-        response = requests.get(f'{API_URL}/eventos/{evento_id}/')
-        evento = response.json()
-    except:
+        response = requests.get(f'{API_URL}/eventos/{evento_id}/', timeout=5)
+        if response.status_code == 200:
+            evento = response.json()
+    except Exception:
         evento = None
     return render_template('detalle.html', evento=evento)
 
@@ -74,6 +76,17 @@ def cancelar_asistencia(evento_id):
         return jsonify(response.json())
     except:
         return jsonify({'error': 'Error'}), 400
+
+@app.route('/api/eventos/<int:evento_id>/', methods=['DELETE'])
+def borrar_evento(evento_id):
+    try:
+        response = requests.delete(f'{API_URL}/eventos/{evento_id}/')
+        if response.content:
+            return jsonify(response.json()), response.status_code
+        return ('', response.status_code)
+    except Exception as e:
+        print(f"❌ ERROR al borrar evento: {e}")
+        return jsonify({'error': 'Error al borrar evento'}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

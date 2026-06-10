@@ -24,6 +24,9 @@
             <button class="btn-cancelar" onclick="cancelarAsistencia({{ evento.id }})">
                 ✗ Cancelar Asistencia
             </button>
+            <button class="btn-borrar" onclick="borrarEvento({{ evento.id }})">
+                Borrar
+            </button>
             <a href="{{ url_for('index') }}" class="btn-volver">Volver</a>
         </div>
     </div>

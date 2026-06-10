@@ -5,6 +5,4 @@ from .views import EventoViewSet
 router = DefaultRouter()
 router.register(r'eventos', EventoViewSet, basename='evento')
 
-urlpatterns = [
-    path('', include(router.urls)),
-]
+urlpatterns = [path('', include(router.urls))]
