@@ -15,11 +15,11 @@
 
 
 
-- \[¿Cómo colaborar en este repositorio?](#-cómo-colaborar-en-este-repositorio)
+- \[¿Cómo colaborar en este repositorio?]
 
-\- \[Opción A: Subir archivos sin instalar nada](#-opción-a-subir-archivos-directamente-desde-github-sin-instalar-nada)
+\- \[Opción A: Subir archivos sin instalar nada]
 
-\- \[Opción B: Usar Git en tu computadora](#-opción-b-usar-git-en-tu-computadora-recomendado-para-cambios-frecuentes)
+\- \[Opción B: Usar Git en tu computadora]
 
 \- \[Buenas prácticas](#-buenas-prácticas)
 
