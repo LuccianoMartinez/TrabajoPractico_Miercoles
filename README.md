@@ -1,4 +1,4 @@
-### 📁 Trabajo Practico de la materia Programación 
+# 📁 Trabajo Practico de la materia Programación 
 
 
 
@@ -6,10 +6,9 @@
 
 
 
-
 ---
 
-
+### Lucciano Martinez, Tomas Agustin Caballero, Hugo Emanuel Godoy, Juan Pablo Tucznio, Emmanuel Eber Barcelo.
 
 ## 📋 Tabla de Contenidos
 
